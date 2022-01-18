@@ -72,11 +72,6 @@ class App extends Component {
 
   };
 
-  valida = () => {
-
-    return 
-  };
-
   eliminaProducto = () => {
     axios.delete(url + this.state.form.id).then((response) => {
       this.setState({ modalEliminar: false });
